@@ -31,6 +31,7 @@ const MapBox = () => {
       map.addControl(geolocate);
 
       map.on('load', () => {
+        console.log('Map loaded')
         geolocate.trigger();
       });
 
